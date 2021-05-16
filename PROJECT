@@ -1,0 +1,16 @@
+domain: convect.ai
+layout:
+- go.kubebuilder.io/v3
+projectName: dask-crd-v2
+repo: convect.ai/dask-crd-v2
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: convect.ai
+  group: compute
+  kind: Dask
+  path: convect.ai/dask-crd-v2/api/v2
+  version: v2
+version: "3"
